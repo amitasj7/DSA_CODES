@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/* 
--1 1 2 6 3 
+/*
+-1 1 2 6 3
 4 2713
  */
 bool comp(const vector<int> &a, const vector<int> &b)
@@ -25,6 +25,8 @@ vector<int> jobScheduling(vector<vector<int>> &jobs)
      */
     // sort vector according profit
     sort(jobs.begin(), jobs.end(), comp);
+
+
     /*
         for (auto it : jobs)
         {
