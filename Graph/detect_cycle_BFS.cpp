@@ -26,7 +26,8 @@ public:
                 }
                 if (!visited[i])
                 {
-                    return detectionNode(adj, i, visited);
+                    q.push({i, it.first});
+                    visited[i] = 1;
                 }
             }
         }
