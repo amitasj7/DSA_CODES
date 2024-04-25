@@ -6,7 +6,7 @@ vector<int> bfsTraversal(int n, vector<vector<int>> &adj)
     // Write your code here.
 
     vector<vector<int>> edgeslist(n);
-    int E = adj.size(); 
+    int E = adj.size();
 
     for (int i = 0; i < E; i++)
     {
@@ -38,7 +38,9 @@ vector<int> bfsTraversal(int n, vector<vector<int>> &adj)
         {
             if (!visited[it])
             {
+
                 q.push(it);
+                visited[it] = 1;
             }
         }
     }
